@@ -10,10 +10,10 @@
     </parent>
 
     <groupId>self.yang</groupId>
-    <artifactId>producer</artifactId>
-    <version>0.0.1</version>
-    <name>producer</name>
-    <description>Consul服务端</description>
+    <artifactId>producer_1</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>producer_1</name>
+    <description>Consul 第二个服务端</description>
 
     <dependencies>
         <dependency>

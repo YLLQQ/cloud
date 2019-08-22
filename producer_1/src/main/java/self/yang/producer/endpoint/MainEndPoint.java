@@ -14,6 +14,6 @@ public class MainEndPoint {
 
     @GetMapping("/index")
     public String index() {
-        return "hello world! from producer";
+        return "hello world! from producer-1";
     }
 }
