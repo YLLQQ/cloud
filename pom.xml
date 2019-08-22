@@ -15,6 +15,7 @@
         <java.compiler>1.8</java.compiler>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+        <spring-compent.version>2.1.2.RELEASE</spring-compent.version>
     </properties>
 
     <modules>
@@ -26,19 +27,29 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.9.9</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>${spring-compent.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
-                <version>2.1.7.RELEASE</version>
+                <version>${spring-compent.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-actuator</artifactId>
-                <version>2.1.7.RELEASE</version>
+                <version>${spring-compent.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
-                <version>2.1.7.RELEASE</version>
+                <version>${spring-compent.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>

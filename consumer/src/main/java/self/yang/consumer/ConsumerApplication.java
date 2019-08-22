@@ -3,6 +3,7 @@ package self.yang.consumer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * self.yang.consumer.ConsumerApplication
@@ -10,6 +11,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @author eleven
  * @date 2019/08/22
  */
+@EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
 public class ConsumerApplication {
