@@ -2,6 +2,7 @@ package self.yang.consumer.clients;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import self.yang.consumer.hystrix.IndexHystrix;
 
 /**
  * self.yang.consumer.clients.IndexClient
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @author eleven
  * @date 2019/08/22
  */
-@FeignClient("Service-Producer")
+@FeignClient(value = "Service-Producer", fallback = IndexHystrix.class)
 public interface IndexClient {
 
     /**
