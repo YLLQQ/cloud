@@ -5,6 +5,7 @@
 
     <groupId>self.yang</groupId>
     <artifactId>cloud</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1</version>
     <name>cloud</name>
     <description>Spring Cloud项目</description>
@@ -18,6 +19,8 @@
 
     <modules>
         <module>producer</module>
+        <module>producer_1</module>
+        <module>consumer</module>
     </modules>
 
     <dependencyManagement>
