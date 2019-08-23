@@ -25,6 +25,7 @@
         <module>zuul</module>
         <module>producer-user</module>
         <module>producer-order</module>
+        <module>config</module>
     </modules>
 
     <dependencyManagement>

@@ -1,0 +1,19 @@
+server:
+  port: 10000
+spring:
+  application:
+    name: config
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: Service-Config
+    config:
+      server:
+        git:
+          uri: http://jn.github/yangguoqing/cloudconfig.git
+          username: yangguoqing
+          password: yang!Q2w
+          searchPaths: '{profile}'
+      label: master
