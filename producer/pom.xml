@@ -9,7 +9,6 @@
         <version>0.0.1</version>
     </parent>
 
-    <groupId>self.yang</groupId>
     <artifactId>producer</artifactId>
     <version>0.0.1</version>
     <name>producer</name>

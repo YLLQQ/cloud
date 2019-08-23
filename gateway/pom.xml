@@ -9,7 +9,6 @@
         <version>0.0.1</version>
     </parent>
 
-    <groupId>self.yang</groupId>
     <artifactId>gateway</artifactId>
     <version>0.0.1</version>
     <name>gateway</name>
